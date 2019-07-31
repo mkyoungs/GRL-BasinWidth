@@ -1,0 +1,12 @@
+# Packages (lines beginning "#" are comments)
+ &PACKAGES
+ useKPP         = .FALSE.,
+ useDiagnostics = .TRUE.,
+ usegmredi      =.TRUE.,
+ useRBCS        =.FALSE.,
+# usePTRACERS     =.FALSE.,
+ useFLT         =.FASLE.,
+ useSEAICE      =.TRUE.,
+ useEXF         =.TRUE.,
+ useCAL         =.TRUE.,
+ &

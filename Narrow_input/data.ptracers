@@ -1,0 +1,24 @@
+# Dye set-up: tracer is initialized after 10 years
+# of spin-up of the dynamical fields.
+# dye.bin has a dye concentration of 1 in a single grid cell
+# near the left boundary (i=2, j=30, k=1), zero otherwise;
+# generated with matlab using gendata.m
+# 
+ &PTRACERS_PARM01
+ PTRACERS_numInUse=1,
+ PTRACERS_advScheme=77,
+ PTRACERS_diffKh=0.,
+ PTRACERS_diffK4=0.,
+ PTRACERS_diffKrNr= 
+0.0200E-3, 0.0200E-3, 0.0200E-3, 0.0200E-3, 0.0200E-3, 
+0.0200E-3, 0.0200E-3, 0.0200E-3, 0.0200E-3, 0.0200E-3,
+0.0200E-3, 0.0201E-3, 0.0201E-3, 0.0201E-3, 0.0201E-3, 
+0.0201E-3, 0.0201E-3, 0.0202E-3, 0.0202E-3, 0.0203E-3,
+0.0204E-3, 0.0205E-3, 0.0208E-3, 0.0212E-3, 0.0219E-3, 
+0.0230E-3, 0.0248E-3, 0.0281E-3, 0.0335E-3, 0.0422E-3,
+0.0544E-3, 0.0730E-3, 0.0937E-3, 0.1109E-3, 0.1247E-3, 
+0.1363E-3, 0.1471E-3, 0.1578E-3, 0.1688E-3, 0.1800E-3,
+ PTRACERS_Iter0= 160000000,
+ PTRACERS_initialFile(1)='dye.bin',
+ PTRACERS_names(1)='Dye',
+ &

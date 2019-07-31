@@ -1,0 +1,95 @@
+
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+ tRef = 40*0.
+ sRef = 40*35.,
+ diffKrNrT = 10.7136E-3, 2.7138E-3, 0.3539E-3, 0.0461E-3, 0.0143E-3, 
+0.0146E-3, 0.0149E-3, 0.0152E-3, 0.0155E-3, 0.0159E-3, 
+0.0164E-3, 0.0169E-3, 0.0174E-3, 0.0181E-3, 0.0188E-3, 
+0.0196E-3, 0.0205E-3, 0.0215E-3, 0.0227E-3, 0.0240E-3, 
+0.0255E-3, 0.0272E-3, 0.0291E-3, 0.0314E-3, 0.0340E-3, 
+0.0370E-3, 0.0404E-3, 0.0444E-3, 0.0490E-3, 0.0543E-3, 
+0.0606E-3, 0.0679E-3, 0.0765E-3, 0.0866E-3, 0.0984E-3, 
+0.1124E-3, 0.1290E-3, 0.1487E-3, 0.1721E-3, 0.2000E-3,
+ viscAr  = 2.E-3,
+ viscAh  = 1.E5 ,
+ bottomDragLinear = 2.e-4 ,
+# bottomDragQuadratic = 0.001,
+ tempAdvScheme =  77,
+ saltAdvScheme = 77,
+ saltstepping=.TRUE.,
+ rhoConst=1035.,
+ rhoConstFresh=1000.,
+# tAlpha=2.E-4,
+# sBeta =0.,
+ gravity=9.81,
+ eosType='JMD95Z',
+ selectP_inEOS_Zc=2,
+ select_rStar=2,
+ nonlinFreeSurf=4,
+ ivdc_kappa=100., 
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ StaggerTimeStep=.TRUE.,	
+ multiDimAdvection=.TRUE.,
+# implicitFreeSurface=.FALSE.,
+ allowFreezing=.FALSE.,
+ hFacInf=0.2,
+ hFacSup=2.0,
+ useRealFreshWaterFlux=.TRUE.,
+ useCDscheme=.TRUE.,  
+ exactConserv=.TRUE.,
+# select_rStar=2,
+# nonlinFreeSurf=4,   
+ hFacMin=.05,
+ hFacMindr=50.,
+ readBinaryPrec=32,
+ globalFiles=.TRUE.,
+ useSingleCpuIO=.TRUE.,
+ no_slip_bottom=.FALSE.,
+# debugLevel=-1,
+ &
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=500,
+ cg2dTargetResidual=1.E-13,
+ &
+# Time stepping parameters
+ &PARM03
+ nIter0 =     108262302 ,
+ nTimeSteps = 12000000 ,
+ deltaTmom  =  2700.    ,
+ tauCD      = 321428.  ,
+ deltaTtracer =   50400.0000     ,
+ deltaTClock  =   50400.0000     ,
+ abEps=0.1,
+ pChkptFreq =   3.15400000E+10  , 
+# chkptFreq  =   5.04000000E+10 ,
+# dumpFreq   =   5.04000000E+10 ,
+ monitorFreq=   252000000.     ,
+ forcing_In_AB=.FALSE.,
+ &
+ &PARM04
+ usingSphericalPolarGrid=.TRUE.,
+ delR= 37,    40,    44,    48,    52,
+ 56,    60,    63,    66,    69,
+ 72,    75,    78,    81,    84,
+ 87,    90,    93,    96,    99,
+ 102,   105,   108,   111,   114,
+ 117,   120,   123,   126,   129,
+ 132,   135,   138,   141,   144,
+ 147,   150,   153,   156,   159,
+ ygOrigin=-72.,
+ dySpacing=2.,
+ dxSpacing=2.,
+ &
+ &PARM05
+ bathyFile=      'topog.bin',
+# zonalWindFile=  'wind_x.bin',
+# surfQfile =   'Qo',
+# EmPmRFile=      'emp.bin',
+ &

@@ -1,0 +1,56 @@
+# *********************
+# External Forcing Data
+# *********************
+ &EXF_NML_01
+ snow_emissivity   = 1.0,
+ ice_emissivity    = 1.0,
+ ocean_emissivity  = 1.0,
+ cdalton           = 0.0,
+ exf_iceCe         = 0.0,
+ repeatPeriod      = 0.,
+ &
+
+# *********************
+ &EXF_NML_02
+#
+ atempstartdate1   = 00010101,
+ atempperiod       = 0.0,
+ precipstartdate1  = 170010101,
+ precipperiod      = 1.2616e+11,
+ snowprecipstartdate1= 170010101,
+ snowprecipperiod    = 1.2616e+11,
+ evapstartdate1  = 170010101,
+ evapperiod      = 1.2616e+11,
+# precipstartdate1  = 00010101,
+# precipperiod      = 0.0,
+# snowprecipstartdate1= 00010101,
+# snowprecipperiod    = 0,
+# evapstartdate1  = 00010101,
+# evapperiod      = 0.0,
+ uwindstartdate1   = 00010101,
+ uwindperiod       = 0.0,
+ vwindstartdate1   = 00010101,
+ vwindperiod       = 0.0,
+ lwdownstartdate1  = 00010101,
+ lwdownperiod      = 0.0,
+#
+ atempfile         = 'airT.bin',
+ uwindfile         = 'wind_x.bin',
+# vwindfile         = 'wind_y.bin',
+ precipfile        = 'precip.bin',
+ snowprecipfile    = 'snowprecip.bin',
+ evapfile          = 'evap.bin'
+ lwdownfile        = 'LW_down.bin',
+ &
+
+# *********************
+ &EXF_NML_03
+ aqhconst         = 0.0,
+ swdownconst      = 0.0,
+ vwindconst       = 0.0,
+ snowprecipconst  = 0.0,
+ &
+
+# *********************
+ &EXF_NML_04
+ &

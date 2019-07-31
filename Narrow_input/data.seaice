@@ -1,0 +1,11 @@
+# Sea ice parameters
+ &SEAICE_PARM01
+  SEAICEwriteState   = .TRUE.,
+#  SEAICE_deltaTtherm = 1800.,
+#  SEAICE_deltaTdyn   = 1800.,
+  LSR_ERROR          = 1.E-4,
+  SEAICEadvScheme    = 77,
+ &
+
+ &SEAICE_PARM03
+ &
