@@ -1,0 +1,19 @@
+#
+#  $Header: /u/gcmpack/MITgcm_contrib/high_res_cube/code-mods/packages.conf,v 1.14 2008/06/13 19:28:48 dimitri Exp $
+#  $Name:  $
+#
+
+gfd
+oceanic
+generic_advdiff
+mdsio
+mom_vecinv
+rw
+timeave
+diagnostics
+#exch2
+cd_code
+monitor
+gmredi
+rbcs
+ptracers
